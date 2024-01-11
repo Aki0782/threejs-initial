@@ -14,4 +14,10 @@ const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerH
 
 camera.position.set(-30, 30);
 
+// Grid Helper
+
+const gripHeler = new THREE.GridHelper(25, 100, "#737373", "#a6a6a6");
+
+scene.add(gripHeler);
+
 renderer.render(scene, camera);
